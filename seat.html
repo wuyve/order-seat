@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影院座位预定</title>
+    <link rel="stylesheet" href="css/seat.css">
+</head>
+<body>
+    <div id="main">
+        <div id="seat">
+            <div id="seat-map">
+                <div id="front">屏幕</div>
+                <div id="seat-row"></div>
+            </div>
+            <div id="booking-details">
+                    <p>影片：
+                        <span>飞驰人生</span>
+                    </p>
+                    <p>时间：
+                        <span>9月14日 2：30</span>
+                    </p>
+                    <p>票价：45元</p>
+                    <p>座位：</p>
+                    <ul id="selected-seats"></ul>
+                    <p>票数
+                        <span id="counter">0</span>
+                    </p>
+                    <p>总计：
+                        <b>￥
+                            <span id="total">0</span>
+                        </b>
+                    </p>
+                    <button class="checkout-button">确定购买</button>
+                    <div id="legend"></div>
+                </div>
+                <div style="clear: both"></div>        
+        </div>
+    </div>
+    <script src="js/seat.js"></script>
+</body>
+</html>
