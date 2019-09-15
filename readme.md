@@ -4,6 +4,7 @@
 3. [浏览器对象模型BOM](#浏览器对象模型BOM)
 4. [document对象](#document对象)
 5. [window对象](#window对象)
+6. [navigator对象](#navigator对象)
 
 ### 创建对象
 创建对象的方法有：
@@ -144,5 +145,41 @@ window对象时BOM的核心对象，它表示浏览器的一个实例。网页�
 |outerwidth|返回窗口的外部宽度|
 |pageXOffset|设置或返回当前页面相对于窗口显示区左上角的X位置|
 |pageYOffset|设置或返回当前页面相对于窗口显示区左上角的Y位置|
+|parent|返回父窗口|
+|Screen|对Screen对象的只读引用。[请参考Screen对象](#Screen对象)|
+|self|返回对当前窗口的引用。等价于window属性|
+|status|返回窗口状态栏的文本|
+|top|返回最顶层的先辈窗口|
+|window|window属性等价于self属性，它包含了对窗口自身的引用|
+|ScreenLeft、ScreenTop、screenX、screenY|只读整数。声明了窗口左上角在屏幕上的x坐标和y坐标。（IE、Safari和Opera支持ScreenLeft和ScreenTop；而Firefox和Safari支持screenX和screenY）|
+|alert()|显示带有一段信息和一个确定按钮的警告框|
+|blur()|把键盘焦点从顶层窗口移开|
+|clearInterval()|取消由setInterval()设置的timeout|
+|clearTimeout()|取消由setTimeout()方法设置的timeout|
+|close()|关闭浏览器窗口|
+|confirm()|显示带有一段消息以及“确定”按钮和“取消”按钮的对话框|
+|createPopup()|创建一个pop-up窗口|
+|focus()|把键盘焦点赋予一个窗口|
+|moveBy()|可在相对窗口的当前坐标把它移动指定的像素|
+|moveTo()|把窗口的左上角移动到下一个指定坐标|
+|open()|打开一个新的浏览器窗口或者查找一个已命名的窗口|
+|print()|打印当前窗口的内容|
+|prompt()|显示可提示用户输入的对话框|
+|resizeBy()|按照指定的像素调整窗口的大小|
+|resizeTo()|把窗口的大小调整到制定的宽度和高度|
+|scrollBy()|按照制定的像素值来滚动内容|
+|scrollTo()|把内容滚动到指定的坐标|
+|setInterval()|按照指定的周期(以毫秒计)来调用函数或者计算表达式|
+|setTiomeout()|在指定的毫秒数后调用函数或者计算表达式|
+
+IE、Safari、Opera和Chrome都提供了screenLeft和screenTop属性获取窗口相对于屏幕左边和上边的位置。跨浏览器取得窗口左边和上边的位置的代码如下:
+```javascript
+var leftPos = (typeof window.screenLeft == "number") ? window.screenLeft : window.screenX;
+var topPos = (typeof window.screenTop == "number") ? window.screenTop : window.screenY;
+alert(leftPos + ":" + topPos);
+```
+#### navigator对象
+|集合、属性与方法|描述|
+|:---:|:---|
 
 (未完，待续...)
