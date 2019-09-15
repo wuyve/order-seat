@@ -122,3 +122,27 @@ DOM为页面中每个元素以及每段独立的文本创建一个新对象。
 |writeIn()|等同于write()方法，不同的是在每个表达式后面写一个换行符。|
 
 #### window对象
+window对象时BOM的核心对象，它表示浏览器的一个实例。网页中定义的任何一个对象、变量和函数，都以window作为其Global对象。
+
+全局变量不能通过delete操作符删除，而直接定义在window对象上，属性可以删除。访问未声明的变量会抛出错误，但通过查询window对象的该变量可以知道某个可能未声明的变量是否存在。
+
+|属性/方法|描述|
+|:---:|:---|
+|frames[]|返回窗口中所有命名的框架|
+|closed|返回该窗口是否已被关闭|
+|defaultStatus|设置或返回窗口状态栏的默认文本|
+|document|对document对象的只读引用。[请参考Document对象](#document对象)|
+|history|对history对象的只读引用。[请参考history对象](#history对象)|
+|innerheight|返回窗口的文档显示区高度|
+|innerwidth|返回窗口文档显示区宽度|
+|length|设置或者返回窗口中的框架数量|
+|location|用于窗口或框架的Location对象。[请参考location对象](#location对象)|
+|name|设置或返回窗口的名称|
+|Navigator|对Navigator对象的只读应用。[请参考Navigator对象](#navigator对象)|
+|opener|返回对创建此窗口的窗口的引用|
+|outerheight|返回窗口的外部高度|
+|outerwidth|返回窗口的外部宽度|
+|pageXOffset|设置或返回当前页面相对于窗口显示区左上角的X位置|
+|pageYOffset|设置或返回当前页面相对于窗口显示区左上角的Y位置|
+
+(未完，待续...)
