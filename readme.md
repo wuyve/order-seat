@@ -1,3 +1,5 @@
+[demo](https://wuyve.github.io/order-seat/index.html)
+
 ## 目录
 1. [创建对象](#创建对象)
 2. [添加/删除属性](#添加删除属性)
