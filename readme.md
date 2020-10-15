@@ -1,4 +1,4 @@
-[demo](https://wuyve.github.io/order-seat/index.html)
+[demo](https://wuyve.github.io/order-seat/seat.html)
 
 ## 目录
 1. [创建对象](#创建对象)
